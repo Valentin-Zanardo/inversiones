@@ -1,0 +1,228 @@
+/* IMPORTS */
+@import 'import';
+@import 'vars';
+
+/* NORMALIZE */
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+/* STYLE NAVBAR */
+#navbarNav {
+	background-color: #000;
+	margin: auto;
+	padding: 35px 0;
+	align-items: center;
+	justify-content: end;
+	position: sticky;
+	top: 0;
+
+	ul {
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 20px;
+			position: relative;
+
+			a {
+				color: rgb(255, 255, 255);
+				text-decoration: none;
+				font-size: 1.1em;
+				font-family: 'Quicksand', sans-serif;
+				font-weight: 700;
+
+				&:hover {
+					color: #FFD700;
+
+					&::before {
+						width: 100%;
+					}
+				}
+
+				&::before {
+					content: "";
+					height: 1px;
+					width: 0;
+					background: #FFD700;
+					position: absolute;
+					left: 0%;
+					bottom: -1px;
+					transition: 0.1s ease-out;
+				}
+			}
+		}
+	}
+}
+
+.navbar {
+	padding: 0;
+	background-color: $backgroundPage;
+
+	img {
+		width: 7em;
+		background-color: #000;
+	}
+}
+
+.container-fluid {
+	padding: 0;
+	background-color: $backgroundPage
+}
+
+/* SYLES PÁGINA PRINCIPAL */
+.presentacion {
+	h1 {
+		padding: .5em 0;
+	}
+
+	p {
+		padding: .5em 0;
+	}
+}
+
+.quienSoy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: #000;
+	width: 100%;
+	height: 50vw;
+	text-align: center;
+	padding-bottom: 10em;
+}
+
+.presentacion {
+	font-family: 'Source Sans Pro', sans-serif;
+
+	h1 {
+		font-size: 3em;
+	}
+
+	p {
+		font-size: 1.5em;
+	}
+}
+
+.containerInfo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 55vw;
+	background-image: url(../img/fotoDesktop.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.info {
+	text-align: center;
+	text-shadow: #000 1px 1px;
+	color: #fff;
+
+	h2 {
+		font-size: 2em;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 1.5em;
+		padding-top: .7em;
+	}
+}
+
+.info__2 {
+
+	text-align: center;
+	color: #fff;
+
+	h3 {
+		font-size: 2em;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 1.5em;
+		padding-top: .7em;
+	}
+}
+
+.containerInfo__2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 58vw;
+	background-color: rgb(24, 26, 27);
+}
+
+.containerInfo__3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 52.5vw;
+	background-image: url(../img/comunidad.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.comunidadTitle {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+}
+
+.infoContacto {
+	padding: 3em 0;
+
+	a {
+		color: #fff;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+	/* STYLE PÁGINA BASE */
+	.containerNav {
+		flex-direction: row-reverse;
+	}
+
+	.quienSoy {
+		height: 62.5em;
+		flex-direction: column;
+	}
+
+	.containerInfo {
+		height: 62.5em;
+		flex-direction: column;
+		iframe{
+			width: 90%;
+		}
+	}
+
+	.containerInfo__2 {
+		height: 62.5em;
+		flex-direction: column;
+	}
+
+	.containerInfo__3 {
+		height: 62.5em;
+		flex-direction: column;
+		.info__2{
+			.infoContacto{
+				iframe{
+					width: 90%;
+				}
+			}
+		}
+	}
+	
+}
