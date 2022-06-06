@@ -18,7 +18,9 @@
 	justify-content: end;
 	position: sticky;
 	top: 0;
-
+	a{
+		color: #fff;
+	}
 	ul {
 		li {
 			list-style: none;
@@ -34,7 +36,7 @@
 				font-weight: 700;
 
 				&:hover {
-					color: #FFD700;
+					color: $colorPrincipal;
 
 					&::before {
 						width: 100%;
@@ -45,7 +47,7 @@
 					content: "";
 					height: 1px;
 					width: 0;
-					background: #FFD700;
+					background: $colorPrincipal;
 					position: absolute;
 					left: 0%;
 					bottom: -1px;
@@ -62,7 +64,7 @@
 
 	img {
 		width: 7em;
-		background-color: #000;
+		background-color: $backgroundPage !important;
 	}
 }
 
@@ -72,6 +74,10 @@
 }
 
 /* SYLES PÁGINA PRINCIPAL */
+.activo {
+	color: #ffd90079;
+}
+
 .presentacion {
 	h1 {
 		padding: .5em 0;
@@ -95,7 +101,7 @@
 }
 
 .presentacion {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Raleway', sans-serif;
 
 	h1 {
 		font-size: 3em;
@@ -174,7 +180,7 @@
 }
 
 .comunidadTitle {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	font-size: 2em;
 	color: #fff;
@@ -186,6 +192,187 @@
 	a {
 		color: #fff;
 	}
+}
+
+/* STYLES CURSOS */
+.cursos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+	background-image: url(../img/texturafondo.svg) ;
+	width: 100%;
+	height: 50vw;
+	text-align: center;
+	padding-bottom: 10em;
+	
+}
+.cursosDos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+	background-image: url(../img/texturafondo.svg) ;
+	width: 100%;
+	height: 50vw;
+	text-align: center;
+	padding-bottom: 10em;
+	
+}
+.itemList {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+
+	li {
+		padding: .23em 0;
+		font-size: 1.3em;
+	}
+}
+.cardCursos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255, 215, 0, 0.55);
+	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(0px);
+	-webkit-backdrop-filter: blur(0px);
+	border-radius: 10px;
+	width: 35em;
+	height: 40em;
+
+	h2 {
+		padding-top: 1.5em;
+		padding-bottom: .6em;
+	}
+	ul{
+		padding-bottom: 2em;
+	}
+}
+#botonCompra{
+	width: 30%;
+	margin-bottom:3em;
+}
+/*TERMINA STYLES CURSOS */
+
+/* STYLES BLOCKCHAIN */
+.cardBlockchain {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background: rgba(24, 26, 27, 0.55);
+	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(0px);
+	-webkit-backdrop-filter: blur(0px);
+	border-radius: 10px;
+	width: 75em;
+	height: 30em;
+
+	h2 {
+		align-items: center;
+		padding-top: 1.5em;
+		padding-bottom: .6em;
+	}
+}
+.blockchainVentajas{
+	display: flex;
+	justify-content: center;
+	padding-top: 15em;
+}
+.textoBlockchain{
+ width: 60%;
+}
+/* TERMINA STYLES BLOCKHAIN */
+/* GAPS */
+.gapInfo {
+	padding-top: 1em;
+}
+
+.greenGap {
+	margin: auto;
+	width: 3%;
+	height: 3px;
+	background-color: $colorPrincipal;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	/* STYLE PÁGINA BASE */
+	.containerNav {
+		flex-direction: row-reverse;
+	}
+
+	.quienSoy {
+		height: 62.5em;
+		flex-direction: column;
+	}
+
+	.containerInfo {
+		height: 62.5em;
+		flex-direction: column;
+
+		iframe {
+			width: 90%;
+		}
+	}
+
+	.containerInfo__2 {
+		height: 62.5em;
+		flex-direction: column;
+	}
+
+	.containerInfo__3 {
+		height: 62.5em;
+		flex-direction: column;
+
+		.info__2 {
+			.infoContacto {
+				iframe {
+					width: 90%;
+				}
+			}
+		}
+	}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	/* STYLE PÁGINA BASE */
+
+	.quienSoy {
+		height: 62.5em;
+		flex-direction: column;
+	}
+
+	.containerInfo {
+		height: 62.5em;
+		flex-direction: column;
+
+		iframe {
+			width: 90%;
+		}
+	}
+
+	.containerInfo__2 {
+		height: 62.5em;
+		flex-direction: column;
+	}
+
+	.containerInfo__3 {
+		height: 62.5em;
+		flex-direction: column;
+
+		.info__2 {
+			.infoContacto {
+				iframe {
+					width: 90%;
+				}
+			}
+		}
+	}
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -203,7 +390,8 @@
 	.containerInfo {
 		height: 62.5em;
 		flex-direction: column;
-		iframe{
+
+		iframe {
 			width: 90%;
 		}
 	}
@@ -216,13 +404,37 @@
 	.containerInfo__3 {
 		height: 62.5em;
 		flex-direction: column;
-		.info__2{
-			.infoContacto{
-				iframe{
+
+		.info__2 {
+			.infoContacto {
+				iframe {
 					width: 90%;
 				}
 			}
 		}
 	}
-	
+
+	/* STYLES CURSOS */
+	.cursos{
+		height: 62.5em;
+		flex-direction: column;
+	}
+	.cursosDos{
+		height: 110em;
+		flex-direction: column;
+	}
+	.cardCursos{
+		margin-top: 3em;
+		width: 90%;
+		height: 77em;
+		padding-bottom: .5em;
+		h2{
+			font-size: 2em;
+		}
+		ul{
+			li{
+				font-size:1.3em
+			}
+		}
+	}
 }

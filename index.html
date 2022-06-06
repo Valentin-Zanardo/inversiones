@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/Z Inversiones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logo2.jpg">
     <script src="https://kit.fontawesome.com/caff63fcd1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>A/Z Inversiones</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -30,10 +32,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link activo disabled" aria-current="page" href="./pages/rendimientos.html">
+                                <span class="activo">Inicio</span> </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
+                            <a class="nav-link activo" aria-current="page"
                                 href="./pages/rendimientos.html">Rendimientos</a>
                         </li>
                         <li class="nav-item">
@@ -43,7 +46,7 @@
                             <a class="nav-link" href="./pages/blockchain.html">Blockchain</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/cryptomonedas.html">Cryptomonedas</a>
+                            <a class="nav-link" href="./pages/cursos.html">Cursos</a>
                         </li>
                     </ul>
                 </div>
@@ -56,19 +59,20 @@
             <div class="quienSoy">
                 <div class="presentacion animate__animated animate__fadeInLeft">
                     <h1>¿Quien Soy?</h1>
-                    <p>Mi nombre es Agustín Zanardo, y me dedico al trading de cryptomonedas</p>
-                    <p>porque descubri que era fanaticos.</p>
+                    <p>Mi nombre es Agustín Zanardo, y me dedico al trading de cryptomonedas.</p>
                 </div>
                 <div class="presentacionUno animate__animated animate__fadeInRight">
                     <img src="./img/agusknacirculo.png" alt="">
                 </div>
             </div>
             <div class="containerInfo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mcka1_3FbIw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="desingInfo">
+                <div data-aos="fade-up-right">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mcka1_3FbIw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="desingInfo" data-aos="fade-up-left">
                     <div class="info">
                         <h2>¿Cuando Comencé?</h2>
                         <p>Empecé en el mundo Crypto en el año 2020, a la edad de 19 años. </p>
@@ -80,28 +84,30 @@
 
 
     <div class="containerInfo__2">
-        <div class="info__2">
-            <h3>¿Por qué deberías unirte al mundo Crypto?</h3>
-            <p>A mi parecer las cryptomonedas son el futuro, y cuando menos lo esperemos </p>
-            <p>estas se apoderaran de los métodos de pago.</p>
+        <div class="info__2" data-aos="zoom-in-down">
+            <h3>¿Por qué deberías unirte al mundo Crypto? </h3>
+            <div class="gapInfo">
+                <div class="greenGap"></div>
+                <p>A mi parecer las cryptomonedas son el futuro, y cuando menos lo esperemos <br> estas se apoderaran de los métodos de pago</p>
+            </div>
         </div>
-        <div class="info__2">
+        <div class="info__2" data-aos="zoom-in-down">
             <img src="./img/bitcoin-gif.gif" alt="">
         </div>
     </div>
 
     <div class="containerInfo__3">
-        <div class="info__2">
+        <div class="info__2" data-aos="zoom-out-up">
             <h3 class="comunidadTitle">¿Te gustaría unirte <br> a nuestra comunidad GRATUITA?</h3>
             <img src="" alt="">
         </div>
         <div class="info__2">
-            <div class="infoContacto">
+            <div class="infoContacto" data-aos="zoom-out-up">
                 <h4>¡Seguime en Instagram!</h4>
                 <iframe width="320" height="440" src="https://www.instagram.com/p/CWJ-AGKN1-E/embed"
                     frameborder="0"></iframe>
             </div>
-            <div class="infoContacto">
+            <div class="infoContacto" data-aos="zoom-out-up">
                 <h4>¡Unite a nuestra comunidad de WhatsApp!</h4>
                 <a href="#"><i class="fa-brands fa-5x fa-whatsapp"></i></a>
             </div>
@@ -111,6 +117,10 @@
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
