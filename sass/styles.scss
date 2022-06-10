@@ -11,7 +11,7 @@
 
 /* STYLE NAVBAR */
 #navbarNav {
-	background-color: #000;
+	background-color: $backgroundPage; 
 	margin: auto;
 	padding: 35px 0;
 	align-items: center;
@@ -64,7 +64,7 @@
 
 	img {
 		width: 7em;
-		background-color: $backgroundPage !important;
+		background-color: $backgroundPage;
 	}
 }
 
@@ -92,7 +92,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	background-color: #000;
 	width: 100%;
 	height: 50vw;
@@ -173,7 +173,7 @@
 	justify-content: space-around;
 	align-items: center;
 	height: 52.5vw;
-	background-image: url(../img/comunidad.JPG);
+	background-image: url(../img/textura2.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -211,6 +211,8 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	color: #fff;
 	background-image: url(../img/texturafondo.svg) ;
 	width: 100%;
@@ -231,6 +233,7 @@
 }
 .cardCursos {
 	display: flex;
+	overflow-y: hidden;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -241,6 +244,7 @@
 	border-radius: 10px;
 	width: 35em;
 	height: 40em;
+
 
 	h2 {
 		padding-top: 1.5em;
@@ -266,6 +270,8 @@
 	backdrop-filter: blur(0px);
 	-webkit-backdrop-filter: blur(0px);
 	border-radius: 10px;
+	font-family: 'Merriweather', serif;
+	font-size: 1.3em;
 	width: 75em;
 	height: 30em;
 
@@ -279,9 +285,15 @@
 	display: flex;
 	justify-content: center;
 	padding-top: 15em;
+	font-family: 'Signika Negative', sans-serif;
 }
 .textoBlockchain{
  width: 60%;
+ ul{
+	li{
+		list-style: none;
+	}
+ }
 }
 /* TERMINA STYLES BLOCKHAIN */
 /* GAPS */
