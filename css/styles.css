@@ -8,58 +8,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap");
 /* Merriweather */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+/* Rokkit */
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
+/* Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 /* colors */
 /* NORMALIZE */
 * {
   margin: 0%;
   padding: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* STYLE NAVBAR */
 #navbarNav {
-  background-color: #181a1b;
+  background-color: rgb(24, 26, 27);
   margin: auto;
   padding: 35px 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  align-items: center;
+  justify-content: end;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
-
 #navbarNav a {
   color: #fff;
 }
-
 #navbarNav ul li {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
   position: relative;
 }
-
 #navbarNav ul li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.1em;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
-
 #navbarNav ul li a:hover {
   color: #FFD700;
 }
-
 #navbarNav ul li a:hover::before {
   width: 100%;
 }
-
 #navbarNav ul li a::before {
   content: "";
   height: 1px;
@@ -68,50 +61,42 @@
   position: absolute;
   left: 0%;
   bottom: -1px;
-  -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
 }
 
 .navbar {
   padding: 0;
-  background-color: #181a1b;
+  background-color: rgb(24, 26, 27);
 }
-
 .navbar img {
   width: 7em;
-  background-color: #181a1b;
+  background-color: rgb(24, 26, 27);
 }
 
 .container-fluid {
   padding: 0;
-  background-color: #181a1b;
+  background-color: rgb(24, 26, 27);
 }
 
 /* SYLES PÁGINA PRINCIPAL */
 .activo {
-  color: #ffd90079;
+  color: rgba(255, 217, 0, 0.4745098039);
 }
 
 .presentacion h1 {
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
-
 .presentacion p {
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 .quienSoy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
   background-color: #000;
+  font-size: 1.2em;
   width: 100%;
   height: 50vw;
   text-align: center;
@@ -119,30 +104,25 @@
 }
 
 .presentacion {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-
 .presentacion h1 {
   font-size: 3em;
 }
-
 .presentacion p {
   font-size: 1.5em;
 }
 
+.desingInfo {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+}
+
 .containerInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 55vw;
   background-image: url(../img/fotoDesktop.png);
@@ -156,72 +136,56 @@
   text-shadow: #000 1px 1px;
   color: #fff;
 }
-
 .info h2 {
   font-size: 2em;
   font-weight: bold;
 }
-
 .info p {
   font-size: 1.5em;
-  padding-top: .7em;
+  padding-top: 0.7em;
 }
 
 .info__2 {
   text-align: center;
   color: #fff;
+  font-family: "Raleway", sans-serif;
 }
-
 .info__2 h3 {
   font-size: 2em;
   font-weight: bold;
 }
-
 .info__2 p {
   font-size: 1.5em;
-  padding-top: .7em;
+  padding-top: 0.7em;
 }
 
 .containerInfo__2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 58vw;
-  background-color: #181a1b;
+  background-color: #000;
 }
 
 .containerInfo__3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   height: 52.5vw;
-  background-image: url(../img/textura2.svg);
+  background-image: url(../img/community.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+.containerInfo__3 h4 {
+  font-size: 1.6em;
+}
 
 .comunidadTitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 2em;
   color: #fff;
@@ -230,38 +194,66 @@
 .infoContacto {
   padding: 3em 0;
 }
-
 .infoContacto a {
   color: #fff;
 }
 
+@-webkit-keyframes gapAnimacion {
+  0% {
+    background-color: rgb(166, 51, 192);
+  }
+  20% {
+    background-color: rgb(6, 61, 89);
+  }
+  40% {
+    background-color: #FFD700;
+  }
+  60% {
+    background-color: rgb(6, 61, 89);
+  }
+  80% {
+    background-color: rgb(166, 51, 192);
+  }
+}
+
+@keyframes gapAnimacion {
+  0% {
+    background-color: rgb(166, 51, 192);
+  }
+  20% {
+    background-color: rgb(6, 61, 89);
+  }
+  40% {
+    background-color: #FFD700;
+  }
+  60% {
+    background-color: rgb(6, 61, 89);
+  }
+  80% {
+    background-color: rgb(166, 51, 192);
+  }
+}
 /* STYLES CURSOS */
 .cursos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   color: #fff;
+  font-family: "Raleway", sans-serif;
   background-image: url(../img/texturafondo.svg);
   width: 100%;
   height: 50vw;
   text-align: center;
   padding-bottom: 10em;
 }
+.cursos h1 {
+  font-size: 3em;
+}
 
 .cursosDos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   overflow-x: hidden;
   overflow-y: hidden;
   color: #fff;
@@ -273,109 +265,91 @@
 }
 
 .itemList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: space-around;
+  align-content: center;
 }
-
 .itemList li {
-  padding: .23em 0;
+  padding: 0.23em 0;
   font-size: 1.3em;
+  text-align: left;
 }
 
 .cardCursos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow-y: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
   background: rgba(255, 215, 0, 0.55);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
   width: 35em;
   height: 40em;
 }
-
 .cardCursos h2 {
   padding-top: 1.5em;
-  padding-bottom: .6em;
+  padding-bottom: 0.6em;
 }
-
 .cardCursos ul {
   padding-bottom: 2em;
 }
 
-#botonCompra {
+.botonCompra {
   width: 30%;
   margin-bottom: 3em;
+}
+
+.aCounter {
+  text-decoration: none;
 }
 
 /*TERMINA STYLES CURSOS */
 /* STYLES BLOCKCHAIN */
 .cardBlockchain {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   background: rgba(24, 26, 27, 0.55);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 1.3em;
   width: 75em;
   height: 30em;
 }
-
 .cardBlockchain h2 {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-top: 1.5em;
-  padding-bottom: .6em;
+  padding-bottom: 0.6em;
 }
 
 .blockchainVentajas {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 15em;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
 }
 
 .textoBlockchain {
   width: 60%;
+  font-size: 1.4em;
 }
-
 .textoBlockchain ul li {
   list-style: none;
+}
+
+.gifBlockchain {
+  padding-top: 4em;
+}
+
+.textoBlockchain li {
+  padding-top: 0.5em;
 }
 
 /* TERMINA STYLES BLOCKHAIN */
@@ -389,152 +363,118 @@
   width: 3%;
   height: 3px;
   background-color: #FFD700;
+  -webkit-animation: gapAnimacion 6s 3s infinite;
+          animation: gapAnimacion 6s 3s infinite;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /* STYLE PÁGINA BASE */
   .containerNav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
+
   .quienSoy {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .containerInfo {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .containerInfo iframe {
     width: 90%;
   }
+
   .containerInfo__2 {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .containerInfo__3 {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .containerInfo__3 .info__2 .infoContacto iframe {
     width: 90%;
   }
 }
-
 @media (min-width: 481px) and (max-width: 768px) {
   /* STYLE PÁGINA BASE */
   .quienSoy {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .containerInfo {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .containerInfo iframe {
     width: 90%;
   }
+
   .containerInfo__2 {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .containerInfo__3 {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .containerInfo__3 .info__2 .infoContacto iframe {
     width: 90%;
   }
 }
-
 @media (min-width: 320px) and (max-width: 480px) {
   /* STYLE PÁGINA BASE */
   .containerNav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
+
   .quienSoy {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .containerInfo {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .containerInfo iframe {
     width: 90%;
   }
+
   .containerInfo__2 {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .containerInfo__3 {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .containerInfo__3 .info__2 .infoContacto iframe {
     width: 90%;
   }
+
   /* STYLES CURSOS */
   .cursos {
     height: 62.5em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .cursosDos {
     height: 110em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .cardCursos {
     margin-top: 3em;
     width: 90%;
     height: 77em;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
   }
   .cardCursos h2 {
     font-size: 2em;
@@ -542,5 +482,4 @@
   .cardCursos ul li {
     font-size: 1.3em;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

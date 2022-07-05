@@ -94,12 +94,12 @@
 	align-items: center;
 	color: rgb(255, 255, 255);
 	background-color: #000;
+	font-size: 1.2em;
 	width: 100%;
 	height: 50vw;
 	text-align: center;
 	padding-bottom: 10em;
 }
-
 .presentacion {
 	font-family: 'Raleway', sans-serif;
 
@@ -111,7 +111,10 @@
 		font-size: 1.5em;
 	}
 }
-
+.desingInfo{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+}
 .containerInfo {
 	display: flex;
 	flex-direction: row;
@@ -145,7 +148,7 @@
 
 	text-align: center;
 	color: #fff;
-
+	font-family: 'Raleway', sans-serif;
 	h3 {
 		font-size: 2em;
 		font-weight: bold;
@@ -164,7 +167,7 @@
 	align-items: center;
 	width: 100%;
 	height: 58vw;
-	background-color: rgb(24, 26, 27);
+	background-color: #000;
 }
 
 .containerInfo__3 {
@@ -173,10 +176,13 @@
 	justify-content: space-around;
 	align-items: center;
 	height: 52.5vw;
-	background-image: url(../img/textura2.svg);
+	background-image: url(../img/community.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	h4{
+		font-size: 1.6em;
+	}
 }
 
 .comunidadTitle {
@@ -193,6 +199,23 @@
 		color: #fff;
 	}
 }
+@keyframes gapAnimacion{
+	0%{
+		background-color: rgb(166, 51, 192);
+	}
+	20%{
+		background-color: rgb(6, 61, 89);
+	}
+	40%{
+		background-color: $colorPrincipal ;
+	}
+	60%{
+		background-color: rgb(6, 61, 89);
+	}
+	80%{
+		background-color: rgb(166, 51, 192);
+	}
+}
 
 /* STYLES CURSOS */
 .cursos {
@@ -200,11 +223,15 @@
 	justify-content: space-around;
 	align-items: center;
 	color: #fff;
+	font-family: 'Raleway', sans-serif;
 	background-image: url(../img/texturafondo.svg) ;
 	width: 100%;
 	height: 50vw;
 	text-align: center;
 	padding-bottom: 10em;
+	h1{
+		font-size: 3em;
+	}
 	
 }
 .cursosDos {
@@ -229,6 +256,7 @@
 	li {
 		padding: .23em 0;
 		font-size: 1.3em;
+		text-align: left;
 	}
 }
 .cardCursos {
@@ -236,7 +264,8 @@
 	overflow-y: hidden;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center; 
+	font-family: 'Rubik', sans-serif;
 	background: rgba(255, 215, 0, 0.55);
 	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
 	backdrop-filter: blur(0px);
@@ -254,9 +283,12 @@
 		padding-bottom: 2em;
 	}
 }
-#botonCompra{
+.botonCompra{
 	width: 30%;
 	margin-bottom:3em;
+}
+.aCounter{
+	text-decoration: none; 
 }
 /*TERMINA STYLES CURSOS */
 
@@ -289,11 +321,20 @@
 }
 .textoBlockchain{
  width: 60%;
+ font-size: 1.4em;
  ul{
 	li{
 		list-style: none;
 	}
  }
+}
+.gifBlockchain{
+	padding-top: 4em;
+}
+.textoBlockchain{
+	li{
+		padding-top: .5em;
+	}
 }
 /* TERMINA STYLES BLOCKHAIN */
 /* GAPS */
@@ -306,6 +347,7 @@
 	width: 3%;
 	height: 3px;
 	background-color: $colorPrincipal;
+	animation: gapAnimacion 6s  3s infinite;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
